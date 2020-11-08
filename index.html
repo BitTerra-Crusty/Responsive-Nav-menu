@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Responsive nav manu</title>
+  <link rel="stylesheet" type="text/css" href="style.css"  />
+  <script src="https://code.jquery.com/jquery-3.3.0.js"></script>
+  <script type="text/javascript">
+      $(document).ready(function(){
+        $('.toggle').click(function(){
+          $('ul').toggleClass("active");
+        });
+      });
+  </script>
+</head>
+<body>
+  <section>
+    <header>
+      <a class="logo" href="#"><img height="80" src="logo.png"/></a>
+      <a class="toggle">&#9776</a>
+      <ul class="">
+        <li><a href="#">Home</a></li>
+        <li><a href="#">About</a></li>
+        <li><a href="#">Services</a></li>
+        <li><a href="#">Contact</a></li>
+      </ul>
+    </header>
+  </section>
+</body>
+</html>
